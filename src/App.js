@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import StickyNavBar from "./core/components/StickyNavBar/StickyNavBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="body">
+      <StickyNavBar
+        color="skyWhite"
+        logo="https://i.pinimg.com/736x/0d/cf/b5/0dcfb548989afdf22afff75e2a46a508.jpg"
+        title="SAGI!"
+        items={[
+          { title: "Home", link: "https://collectui.com/" },
+          {
+            title: "About",
+            link: "https://docs.google.com/document/d/18d4jLvp_MWUaEVTM0qS9IpCAKdUYEvkgJfZUgZ1enI4/edit",
+          },
+
+          [
+            {
+              title: "Products",
+              link: "https://docs.google.com/document/d/18d4jLvp_MWUaEVTM0qS9IpCAKdUYEvkgJfZUgZ1enI4/edit",
+            },
+            {
+              title: "Ipad",
+              link: "https://docs.google.com/document/d/18d4jLvp_MWUaEVTM0qS9IpCAKdUYEvkgJfZUgZ1enI4/edit",
+            },
+            {
+              title: "Iphone",
+              link: "https://docs.google.com/document/d/18d4jLvp_MWUaEVTM0qS9IpCAKdUYEvkgJfZUgZ1enI4/edit",
+            },
+          ],
+        ]}
+      ></StickyNavBar>
     </div>
   );
 }

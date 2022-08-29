@@ -1,0 +1,53 @@
+a {
+  font-weight: bolder;
+}
+a.white {
+  text-decoration: none;
+
+  background: linear-gradient(to right, darkgrey, grey),
+    linear-gradient(to right, #ffffff, #ece9e6);
+  background-size: 0 3px, 100% 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a.azurLane {
+  text-decoration: none;
+
+  background: linear-gradient(to right, white, white),
+    linear-gradient(to right, #91eae400, #86a8e700, #7f7fd500);
+  background-size: 0 3px, 100% 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+a.instagram {
+  text-decoration: none;
+
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4),
+    linear-gradient(to right, #fcb04500, #fd1d1d00, #833ab400);
+  background-size: 0 3px, 100% 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+a.skyWhite {
+  text-decoration: none;
+
+  background: linear-gradient(to left, grey, grey),
+    linear-gradient(to left, #cfdef3, #e0eafc);
+  background-size: 0 3px, 100% 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+a:hover {
+  background-size: 100% 3px, 0 3px;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
