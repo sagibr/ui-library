@@ -1,5 +1,5 @@
 import "./App.css";
-import StickyNavBar from "./core/components/StickyNavBar/StickyNavBar";
+import StickyNavBar from "./components/advenced/StickyNavBar/StickyNavBar.jsx";
 
 function App() {
   return (
@@ -30,6 +30,12 @@ function App() {
             },
           ],
         ]}
+        logoAndTitleOrder={3}
+        itemsOrder={1}
+        searchOrder={2}
+        // haveSearch={false}
+        // haveLogo={false}
+        // haveTitle={false}
       ></StickyNavBar>
     </div>
   );

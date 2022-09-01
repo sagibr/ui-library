@@ -1,0 +1,56 @@
+@keyframes hamburgerOpen {
+  from {
+    width: 100px;
+    height: 100px;
+    right: -25vw;
+    top: -25vh;
+    border-radius: 100%;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+  }
+}
+.hamburgerContainer {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .hamburgerContainer {
+    display: block;
+  }
+}
+.hamburgerItemsContainerDisabled {
+  display: none;
+}
+
+.hamburgerItemsContainerActive {
+  animation-name: hamburgerOpen;
+  animation-duration: 0.4s;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.hamburgerButtonContainer {
+  z-index: 3;
+  position: fixed;
+}
+.hamburgerNetflix {
+  /* background: #8e0e00; */
+  /* background: -webkit-linear-gradient(to right, #1f1c18, #8e0e00); */
+  background: linear-gradient(
+    to right,
+    rgba(31, 28, 24.8, 0.8),
+    rgba(142, 14, 0, 0.8)
+  );
+  /* background: white; */
+  color: rgb(171, 170, 170);
+}
