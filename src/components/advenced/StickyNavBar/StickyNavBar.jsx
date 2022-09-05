@@ -33,6 +33,7 @@ const StickyNavBar = (props) => {
               <div key={index} className="dropdown">
                 <div className="dropbtn">
                   <Item
+                    hamburger={false}
                     color={props.color}
                     title={item[0].title}
                     link={item[0].link}
@@ -43,6 +44,7 @@ const StickyNavBar = (props) => {
                     index2 > 0 ? (
                       <div key={index2}>
                         <Item
+                          hamburger={false}
                           color={props.color}
                           index={index2}
                           title={value.title}
@@ -59,6 +61,7 @@ const StickyNavBar = (props) => {
               // if not an array make a regular link:
               <div key={index}>
                 <Item
+                  hamburger={false}
                   color={props.color}
                   index={index}
                   title={item.title}
@@ -82,6 +85,14 @@ const StickyNavBar = (props) => {
         items={props.items}
         navVisible={navVisible}
         setNavVisible={setNavVisible}
+        animation={props.animation}
+        logoAndTitleOrder={props.logoAndTitleOrder}
+        title={props.title}
+        logo={props.logo}
+        haveLogo={props.haveLogo}
+        haveTitle={props.haveTitle}
+        hamburgerButtonPosition={props.hamburgerButtonPosition}
+        color={props.color}
       ></Hamburger>
     </div>
   );

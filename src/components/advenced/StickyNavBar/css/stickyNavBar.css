@@ -154,12 +154,24 @@ nav.netflix {
 
 @media only screen and (max-width: 768px) {
   .logoAndTitleContainer {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .logoContainer {
     display: none;
+  }
+  .titleContainer {
+    width: 40%;
   }
   .itemsContainer {
     display: none;
   }
   .searchContainer {
     display: none;
+  }
+  .navBarContainer {
+    justify-content: center;
   }
 }
